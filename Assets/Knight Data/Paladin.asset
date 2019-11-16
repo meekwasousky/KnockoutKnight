@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e94b11bd322811478743bfd163128ed, type: 3}
+  m_Name: Paladin
+  m_EditorClassIdentifier: 
+  knightType: Paladin
+  description: 
+  icon: {fileID: -8594515011827703002, guid: b257730a4fe579d4984b128b22029f82, type: 3}
+  heatlth: 150
+  attackDamage: 20
+  defense: 20
