@@ -9,7 +9,7 @@ public class playermovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 4.0f;
+        speed = 1.5f;
     }
 
     // Update is called once per frame
