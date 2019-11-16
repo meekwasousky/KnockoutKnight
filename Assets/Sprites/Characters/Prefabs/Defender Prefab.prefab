@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5276408372762919749}
   - component: {fileID: 6622365664112297240}
   - component: {fileID: 1888758352}
+  - component: {fileID: 285399225549103360}
   m_Layer: 0
   m_Name: Defender_0
   m_TagString: Untagged
@@ -101,6 +102,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &285399225549103360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228342560763335194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db6d71a0732ab04bb7ba496f1ad012e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  animation_bool: 0
+  anim: {fileID: 0}
 --- !u!1 &5102523702505103208
 GameObject:
   m_ObjectHideFlags: 0

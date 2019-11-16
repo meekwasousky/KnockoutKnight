@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player1Controller : MonoBehaviour
 {
-     public float speed;
+    protected CharacterController controller1;
+    public float speed;
     public bool animation_bool;
     public Animator anim;
                   
     // Start is called before the first frame update
     void Start()
     {
+        controller1 = gameObject.GetComponent<CharacterController>();
         speed = 1.5f;
         anim = gameObject.GetComponent<Animator>();
     }
@@ -22,7 +24,6 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.Mouse0))
         {
             anim.SetTrigger("Attacking");
-            
         }
     }
 
@@ -45,4 +46,5 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
     }
+
 }
