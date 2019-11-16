@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
-    public GameObject Spwanpoint;
+    public characterinfo[] Characters;
+    public GameObject[] Spwanpoints;
 
     private int currentindex = 0;
 
-    private 
+    private characterinfo currentCharacterType = null;
+
+    private characterinfo currentCharacter = null;
     // Start is called before the first frame update
     void Start()
     {
