@@ -21,7 +21,7 @@ public class Player2Controller : MonoBehaviour
     void Update()
     {
         playerMovement();
-        if(Input.GetKey(KeyCode.Mouse0))
+        if(Input.GetKey(KeyCode.Mouse1))
         {
             anim.SetTrigger("Attacking");
         }
