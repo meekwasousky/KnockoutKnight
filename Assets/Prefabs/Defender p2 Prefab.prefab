@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1355742121830874643}
   - component: {fileID: 1355742121830874642}
   - component: {fileID: 36133430251832992}
+  - component: {fileID: 1046060590}
   m_Layer: 0
   m_Name: Defender - p2_0
   m_TagString: Defender P2
@@ -143,6 +144,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17, y: 0.32}
   m_EdgeRadius: 0
+--- !u!50 &1046060590
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355742121830874640}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1355742121921939202
 GameObject:
   m_ObjectHideFlags: 0
