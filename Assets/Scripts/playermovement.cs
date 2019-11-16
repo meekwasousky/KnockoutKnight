@@ -5,7 +5,9 @@ using UnityEngine;
 public class playermovement : MonoBehaviour
 {
     public float speed;
-
+    public bool animation_bool;
+    public new Animation animation;
+                  
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,14 @@ public class playermovement : MonoBehaviour
     void Update()
     {
         playerMovement();
+        if (animation_bool == true)
+                     {
+                 animation.Play("Knight_Attack");
+                     }
+            if(Input.GetButtonDown("space"))
+                     {
+               animation_bool = true;
+                     }
     }
 
     public void playerMovement()
