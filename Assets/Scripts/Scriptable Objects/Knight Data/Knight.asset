@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e94b11bd322811478743bfd163128ed, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
-  knightType: 
+  knightType: Knight
   description: 
   icon: {fileID: -5711848221618334454, guid: f847e3c7c1d12bb42abb4025998018fd, type: 3}
-  heatlth: 100
-  attackDamage: 30
-  defense: 20
+  heatlth: 2
+  attackDamage: 3
+  defense: 1

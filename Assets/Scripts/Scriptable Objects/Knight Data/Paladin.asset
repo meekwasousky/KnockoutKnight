@@ -15,6 +15,6 @@ MonoBehaviour:
   knightType: Paladin
   description: 
   icon: {fileID: -8594515011827703002, guid: b257730a4fe579d4984b128b22029f82, type: 3}
-  heatlth: 150
-  attackDamage: 20
-  defense: 20
+  heatlth: 2
+  attackDamage: 2
+  defense: 2

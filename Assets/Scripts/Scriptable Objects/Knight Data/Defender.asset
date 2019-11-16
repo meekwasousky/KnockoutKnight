@@ -15,6 +15,6 @@ MonoBehaviour:
   knightType: Defender
   description: 
   icon: {fileID: 4558027599311264431, guid: 612b6c3aa76637445bffddee3b279878, type: 3}
-  heatlth: 300
-  attackDamage: 10
-  defense: 20
+  heatlth: 2
+  attackDamage: 1
+  defense: 3
