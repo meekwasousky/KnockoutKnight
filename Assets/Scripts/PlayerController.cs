@@ -2,30 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
      public float speed;
     public bool animation_bool;
-    public new Animation animation;
+    public Animator anim;
                   
     // Start is called before the first frame update
     void Start()
     {
         speed = 1.5f;
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         playerMovement();
-        if (animation_bool == true)
-                     {
-                 animation.Play("Knight_Attack");
-                     }
-            if(Input.GetButtonDown("space"))
-                     {
-               animation_bool = true;
-                     }
+        if(Input.GetKey(KeyCode.Mouse0))
+        {
+            anim.SetTrigger("Attacking");
+            
+        }
     }
 
     public void playerMovement()
