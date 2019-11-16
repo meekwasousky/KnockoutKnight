@@ -22,6 +22,7 @@ public class PlayerControl : MonoBehaviour
                      {
                  animation.Play("Knight_Attack");
                      }
+            if(Input.GetButtonDown("space"))
                      {
                animation_bool = true;
                      }
