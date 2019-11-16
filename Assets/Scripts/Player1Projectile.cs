@@ -37,7 +37,7 @@ public class Player1Projectile : MonoBehaviour
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 
-    void OnCollisionEnter2d(Collision2d collision)
+    void OnCollisionEnter2d(Collision2D collision)
     {
         if(collision.gameObject.tag == "Knight P2")
         {
