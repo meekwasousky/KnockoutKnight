@@ -17,4 +17,53 @@ public class KnghtData : ScriptableObject
     private int attackDamage;
     [SerializeField]
     private int defense;
+
+
+
+    public string KnightType
+    {
+        get
+        {
+            return knightType;
+        }
+    }
+
+    public string Description
+    {
+        get
+        {
+            return description;
+        }
+    }
+
+    public Sprite Icon
+    {
+        get
+        {
+            return icon;
+        }
+    }
+
+    public int Health
+    {
+        get
+        {
+            return heatlth;
+        }
+    }
+
+    public int AttackDamage
+    {
+        get
+        {
+            return attackDamage;
+        }
+    }
+    public int Defense
+    {
+        get
+        {
+            return defense;
+        }
+    }
 }
