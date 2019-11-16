@@ -10,6 +10,9 @@ TagManager:
   - Knight P2
   - Defender P2
   - Paladin P2
+  - Knight Projectile
+  - Paladin Projectile
+  - Defender Projectile
   layers:
   - Default
   - TransparentFX
