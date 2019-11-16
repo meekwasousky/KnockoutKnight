@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayerManager : MonoBehaviour
+public class characterinfo : MonoBehaviour
 {
+    public string characterType;
     public int health;
-    public int attackDamage;
     public int defense;
+
+    [HideInInspector]
+    public string Name;
+
+    public string description;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +22,5 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void defend()
-    {
-
     }
 }
