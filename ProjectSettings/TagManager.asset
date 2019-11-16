@@ -7,6 +7,9 @@ TagManager:
   - Knight
   - Defender
   - Paladin
+  - Knight P2
+  - Defender P2
+  - Paladin P2
   layers:
   - Default
   - TransparentFX
