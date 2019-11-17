@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class characterinfo : MonoBehaviour
 {
     public string characterType;
-    public int health;
-    public int defense;
+    public float maxHealth;
+    public float health;
+    public float defense;
+
+    public Slider playerHealthBar;
 
     [HideInInspector]
     public string Name;

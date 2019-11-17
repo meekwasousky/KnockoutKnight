@@ -213,8 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 
+  maxHealth: 75
   health: 75
   defense: 3
+  playerHealthBar: {fileID: 0}
   Name: 
   description: 
 --- !u!1 &5102523702505103208

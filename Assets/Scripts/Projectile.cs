@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
 
     public bool player1;
     
-    public int projectileDamage;
+    public float projectileDamage;
 
     void start()
     {
