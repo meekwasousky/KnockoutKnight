@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1252116318}
   m_Layer: 0
   m_Name: Defender Projctile p1
-  m_TagString: Defender Projectile
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5592642679705979292}
   m_Layer: 0
   m_Name: Knight Projectile p2
-  m_TagString: Knight Projectile
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
