@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class characterinfo : MonoBehaviour
 {
@@ -42,6 +43,14 @@ public class characterinfo : MonoBehaviour
 
         if(health <= 0)
         {
+            if (this.gameObject.tag.Equals("Defender P2"))
+            {
+                SceneManager.LoadScene("PlayerOneWin");
+            }
+            if(this.gameObject.tag.Equals("Knight"))
+            {
+                SceneManager.LoadScene("PlayerTwoWin");
+            }
             Destroy(this.gameObject);
         }
     }
