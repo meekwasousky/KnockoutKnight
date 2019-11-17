@@ -23,4 +23,18 @@ public class characterinfo : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Projectile"))
+        {
+            health -= (collision.gameObject.GetComponent<Projectile>().projectileDamage - defense);
+            Destroy(collision.gameObject);
+        }
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

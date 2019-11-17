@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 634184726260278732}
   - component: {fileID: 634184726260278735}
-  - component: {fileID: 634184726260278734}
   - component: {fileID: 634184726260278733}
   - component: {fileID: 1148816060518905328}
+  - component: {fileID: 330226616}
   m_Layer: 0
   m_Name: Paladin projectile p1
   m_TagString: Paladin Projectile
@@ -83,20 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &634184726260278734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634184726260278731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873ca34d21e6fc64bacd2a9d0326d35a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  projectileDamage: 8
 --- !u!61 &634184726260278733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,6 +130,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &330226616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634184726260278731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6158c2680e9a5c544bb484f5d9a03f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  player1: 1
+  projectileDamage: 8
 --- !u!1 &634184726759447497
 GameObject:
   m_ObjectHideFlags: 0

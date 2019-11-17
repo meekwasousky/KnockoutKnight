@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  player1: 0
   projectileDamage: 10
 --- !u!61 &8287113112516363766
 BoxCollider2D:

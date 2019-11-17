@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6362617435524232405}
   - component: {fileID: 6362617435524232404}
-  - component: {fileID: 6362617435524232407}
   - component: {fileID: 6362617435524232410}
   - component: {fileID: 1860756591113242392}
+  - component: {fileID: 1252116318}
   m_Layer: 0
   m_Name: Defender Projctile p1
   m_TagString: Defender Projectile
@@ -114,20 +114,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6362617435524232407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6362617435524232406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873ca34d21e6fc64bacd2a9d0326d35a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  projectileDamage: 6
 --- !u!61 &6362617435524232410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -175,3 +161,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1252116318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362617435524232406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6158c2680e9a5c544bb484f5d9a03f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  player1: 1
+  projectileDamage: 6
