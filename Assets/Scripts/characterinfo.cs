@@ -31,9 +31,8 @@ public class characterinfo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag.Equals("Knight Projectile"))
+        if (collision.gameObject.tag.Equals("Projectile"))
         {
-            Debug.Log("ATTACK!!!");
             health -= (collision.gameObject.GetComponent<Projectile>().projectileDamage - defense);
 
             playerHealthBar.value = CalculateHealth();
