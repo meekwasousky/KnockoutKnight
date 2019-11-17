@@ -22,4 +22,8 @@ public class TitleMenuButtons : MonoBehaviour
         SceneManager.LoadScene(level);
         Debug.Log("load level");
     }
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
 }
