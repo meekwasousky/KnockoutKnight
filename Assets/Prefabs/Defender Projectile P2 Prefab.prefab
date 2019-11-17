@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 670444068909058714}
   m_Layer: 0
   m_Name: Defender Projctile p2
-  m_TagString: Defender Projectile
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  player1: 0
   projectileDamage: 6
 --- !u!61 &5290272289900757221
 BoxCollider2D:
