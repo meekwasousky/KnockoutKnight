@@ -19,7 +19,8 @@ public class characterinfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = maxHealth;
+        playerHealthBar.value = CalculateHealth();
     }
 
     // Update is called once per frame
@@ -33,6 +34,9 @@ public class characterinfo : MonoBehaviour
         if (collision.gameObject.tag.Equals("Projectile"))
         {
             health -= (collision.gameObject.GetComponent<Projectile>().projectileDamage - defense);
+
+            playerHealthBar.value = CalculateHealth();
+
             Destroy(collision.gameObject);
         }
 
@@ -40,5 +44,10 @@ public class characterinfo : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private float CalculateHealth()
+    {
+        return health / maxHealth;
     }
 }
