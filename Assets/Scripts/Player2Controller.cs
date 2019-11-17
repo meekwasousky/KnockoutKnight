@@ -8,6 +8,7 @@ public class Player2Controller : MonoBehaviour
     public float speed;
     public bool animation_bool;
     public Animator anim;
+    public GameObject projectile;
                   
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,10 @@ public class Player2Controller : MonoBehaviour
     void Update()
     {
         playerMovement();
-        if(Input.GetKey(KeyCode.Mouse1))
+        if(Input.GetKeyDown(KeyCode.Mouse1))
         {
             anim.SetTrigger("Attacking");
+            ThrowProjectile();
         }
     }
 
@@ -47,4 +49,10 @@ public class Player2Controller : MonoBehaviour
         }
     }
 
+    public void ThrowProjectile()
+    {
+        GameObject clone;
+        clone = Instantiate(projectile, this.gameObject.transform.GetChild(0).position, this.gameObject.transform.GetChild(0).rotation) as GameObject;
+        Destroy(clone, 5.0f);
+    }
 }

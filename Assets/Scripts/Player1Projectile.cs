@@ -6,29 +6,11 @@ public class Player1Projectile : MonoBehaviour
 {
     public float speed = 2.0f;
     
-    public int knightDamage;
-    public int paladinDamage;
-    public int defenderDamage;
-
-    private int projectileDamage;
+    public int projectileDamage;
 
     void start()
     {
-        knightDamage = 10;
-        paladinDamage = 8;
-        defenderDamage = 6;
-        if(this.gameObject.tag == "Paladin Projectile")
-        {
-            projectileDamage = paladinDamage;
-        }
-        if(this.gameObject.tag == "Knight Projectile")
-        {
-            projectileDamage = knightDamage;
-        }
-        if(this.gameObject.tag == "Defender Projectile")
-        {
-            projectileDamage = defenderDamage;
-        }
+       
     }
 
     // Update is called once per frame
@@ -39,9 +21,10 @@ public class Player1Projectile : MonoBehaviour
 
     void OnCollisionEnter2d(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Knight P2")
+        if (collision.gameObject.tag == "Knight P2" || collision.gameObject.tag == "Paladin P2" || collision.gameObject.tag == "Defender P2")
         {
-            
+            collision.gameObject.GetComponent<characterinfo>().health -= (projectileDamage - collision.gameObject.GetComponent<characterinfo>().defense);
+            Debug.Log("P2 has been hit!");
         }
     }
 }
