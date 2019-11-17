@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 634184726260278733}
   - component: {fileID: 1148816060518905328}
   - component: {fileID: 330226616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paladin projectile p1
   m_TagString: Projectile
   m_Icon: {fileID: 0}

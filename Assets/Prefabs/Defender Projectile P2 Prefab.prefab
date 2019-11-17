@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5290272289900757220}
   - component: {fileID: 5290272289900757221}
   - component: {fileID: 670444068909058714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Defender Projctile p2
   m_TagString: Projectile
   m_Icon: {fileID: 0}

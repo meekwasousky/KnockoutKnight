@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8287113112516363765}
   - component: {fileID: 8287113112516363766}
   - component: {fileID: 5592642679705979292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knight Projectile p2
   m_TagString: Projectile
   m_Icon: {fileID: 0}
