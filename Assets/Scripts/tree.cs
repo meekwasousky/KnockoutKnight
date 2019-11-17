@@ -17,9 +17,9 @@ public class tree : MonoBehaviour
       
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Defender Projectile") || collision.gameObject.CompareTag("Knight Projectile") || collision.gameObject.CompareTag("Paladin Projectile"))
+        if (collision.gameObject.CompareTag("Projectile"))
         {
             durability -= 1;
             Destroy(collision.gameObject);
