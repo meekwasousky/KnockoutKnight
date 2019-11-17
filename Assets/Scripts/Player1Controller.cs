@@ -22,7 +22,7 @@ public class Player1Controller : MonoBehaviour
     void Update()
     {
         playerMovement();
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetTrigger("Attacking");
             ThrowProjectile();
