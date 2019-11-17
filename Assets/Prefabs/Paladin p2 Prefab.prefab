@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &974670147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974670148}
+  m_Layer: 0
+  m_Name: Projectile Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974670148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974670147}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9213253833984284677}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9213253833153491428
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +39,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9213253833153491427}
-  - component: {fileID: -5397607288636244808}
   m_Layer: 0
   m_Name: Paladin p2 Prefab
   m_TagString: Untagged
@@ -32,24 +61,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9213253833153491428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f42d58974131984583f1e4eb1a24c4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterType: Paladin
-  health: 75
-  attackDamage: 8
-  defense: 2
-  Name: 
-  description: Holy defender and rightous attacker
 --- !u!1 &9213253833984284678
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +75,7 @@ GameObject:
   - component: {fileID: 9213253833984284676}
   - component: {fileID: 1770595129071658148}
   - component: {fileID: 1535255759}
+  - component: {fileID: 1516196795}
   m_Layer: 0
   m_Name: Paladin-p2_0
   m_TagString: Paladin P2
@@ -81,7 +93,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 974670148}
   m_Father: {fileID: 9213253833153491427}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -169,6 +182,8 @@ MonoBehaviour:
   speed: 0
   animation_bool: 0
   anim: {fileID: 0}
+  projectile: {fileID: 2093048419745729589, guid: 28281e88b50dae24fa17b83c33dbb76d,
+    type: 3}
 --- !u!61 &1770595129071658148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -203,16 +218,33 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9213253833984284678}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1516196795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9213253833984284678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f42d58974131984583f1e4eb1a24c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterType: 
+  health: 75
+  defense: 2
+  Name: 
+  description: 
