@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 634184726759447498, guid: 942b281a3aff3004d8fc0b0466ad1772,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 634184726759447498, guid: 942b281a3aff3004d8fc0b0466ad1772,
         type: 3}
@@ -344,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 5290272289560814394, guid: efb26c75a1ce13341985a118435a71ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5290272289560814394, guid: efb26c75a1ce13341985a118435a71ad,
         type: 3}
@@ -374,6 +374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knight Projectile P1 Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 3458757471414523039, guid: fdca92abd277a6f4b9b40fe8bafd3c41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Projectile
       objectReference: {fileID: 0}
     - target: {fileID: 3458757471414522720, guid: fdca92abd277a6f4b9b40fe8bafd3c41,
         type: 3}
@@ -413,7 +418,7 @@ PrefabInstance:
     - target: {fileID: 3458757471414522720, guid: fdca92abd277a6f4b9b40fe8bafd3c41,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3458757471414522720, guid: fdca92abd277a6f4b9b40fe8bafd3c41,
         type: 3}
@@ -504,7 +509,7 @@ PrefabInstance:
     - target: {fileID: 6362617434236637088, guid: fb11ceeae39fd4447936daa1c4a60356,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6362617434236637088, guid: fb11ceeae39fd4447936daa1c4a60356,
         type: 3}
@@ -744,7 +749,7 @@ PrefabInstance:
     - target: {fileID: 2093048419745729594, guid: 28281e88b50dae24fa17b83c33dbb76d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2093048419745729594, guid: 28281e88b50dae24fa17b83c33dbb76d,
         type: 3}
